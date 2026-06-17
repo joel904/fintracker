@@ -33,9 +33,7 @@ descricao	String	Descrição da transação
 valor	double	Valor monetário da transação
 tipo	String	Tipo: "receita" ou "despesa"
 
-Exportar
 
-Copiar
 Métodos:
 
 Método	Retorno	Descrição
@@ -48,13 +46,12 @@ getTipo()	String	Retorna o tipo
 setTipo(String)	void	Define o tipo
 toString()	String	Representação textual da transação
 
-Exportar
 
-Copiar
+
+
 Exemplo de uso:
 
-java
-Copiar
+
 
 Transacao t = new Transacao("Salário", 3000.0, "receita");
 System.out.println(t);
@@ -67,9 +64,9 @@ Atributos:
 Atributo	Tipo	Descrição
 transacoes	ArrayList<Transacao>	Lista de transações cadastradas
 
-Exportar
 
-Copiar
+
+
 Métodos:
 
 Método	Retorno	Descrição
@@ -79,13 +76,12 @@ listarTransacoes()	void	Exibe todas as transações
 calcularSaldoTotal()	double	Calcula e retorna o saldo total
 removerTransacao(int)	void	Remove uma transação pelo índice
 
-Exportar
 
-Copiar
+
+
 Exemplo de uso:
 
-java
-Copiar
+
 
 FinTrack finTracker = new FinTrack();
 
@@ -111,6 +107,8 @@ Exibir o menu principal
 Capturar entradas do usuário via Scanner
 Direcionar as ações para o FinTrack
 Tratar exceções de entrada inválida
+
+
 Fluxo do menu:
 
 ┌─────────────────────────┐
@@ -122,7 +120,10 @@ Fluxo do menu:
 │ 4. Remover transação    │
 │ 5. Sair                 │
 └─────────────────────────┘
+
+
 4. 🔄 Fluxo de Funcionamento
+
 Início
   │
   ▼
@@ -142,6 +143,7 @@ Usuário escolhe opção
   ├──► 5. Sair ────────► Encerra o programa
   │
   └──► Opção inválida ──► Exibe mensagem de erro ──► Volta ao menu
+
 
 5. ⚙️ Requisitos do Sistema
 Item	Versão
